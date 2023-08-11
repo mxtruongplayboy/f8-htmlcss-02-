@@ -18,6 +18,11 @@ body {
     font-weight: 400;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 130px 0;
+}
 /* ===========================================================
    ========================= COMMON ==========================
    ===========================================================
@@ -30,11 +35,6 @@ body {
     margin-right: auto;
 }
 
-.main-content:not(:first-of-type),
-.main-content:not(:last-of-type) {
-    margin-bottom: 130px;
-}
-
 a {
     text-decoration: none;
 }
@@ -44,6 +44,17 @@ a {
     font-size: 6.2rem;
     font-weight: 700;
     line-height: 1.16; /* 116.129% */
+}
+
+.lv2 {
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1.33; /* 133.333% */
+}
+
+.lv3 {
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 .btn {
@@ -136,6 +147,7 @@ a {
  */
 .hero {
     background: #fff;
+    padding-bottom: 79px;
 }
 
 .hero .body {
@@ -311,4 +323,43 @@ a {
 .hero .media-block .students .avatar:not(:first-child),
 .hero .media-block .students span {
     margin-left: -7px;
+}
+
+/* ===========================================================
+   ======================== FEATURE ==========================
+   ===========================================================
+ */
+.feature .content {
+    max-width: 591px;
+}
+
+.feature .content .title {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.feature .content .desc {
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    margin-top: 18px;
+}
+
+.list-feature {
+    display: flex;
+    margin-top: 80px;
+    gap: 0 200px;
+}
+
+.list-feature .item .heading {
+    margin-top: 26px;
+}
+
+.list-feature .item .desc {
+    max-width: 224px;
+    margin-top: 16px;
+    color: var(--thirdly-color);
+    font-size: 1.6rem;
+    line-height: 1.69; /* 168.75% */
 }
