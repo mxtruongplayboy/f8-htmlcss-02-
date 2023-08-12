@@ -52,11 +52,6 @@ a {
     line-height: 1.33; /* 133.333% */
 }
 
-.lv3 {
-    font-size: 2rem;
-    font-weight: 600;
-}
-
 .btn {
     display: flex;
     align-items: center;
@@ -73,6 +68,16 @@ a {
 
 .btn:hover {
     opacity: 0.9;
+}
+
+.title-page {
+    display: inline-block;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.11em;
+    line-height: normal;
+    margin-bottom: 18px;
 }
 /* ===========================================================
    ========================= HEADER ==========================
@@ -333,27 +338,24 @@ a {
     max-width: 591px;
 }
 
-.feature .content .title {
-    color: var(--secondary-color);
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-bottom: 18px;
-}
-
 .feature .content .desc {
     color: var(--secondary-color);
     font-size: 1.8rem;
     margin-top: 18px;
+    line-height: normal;
 }
 
 .list-feature {
     display: flex;
     margin-top: 80px;
-    gap: 0 200px;
+    justify-content: space-between;
+    max-width: 87.5%;
 }
 
 .list-feature .item .heading {
     margin-top: 26px;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 .list-feature .item .desc {
@@ -362,4 +364,127 @@ a {
     color: var(--thirdly-color);
     font-size: 1.6rem;
     line-height: 1.69; /* 168.75% */
+}
+.line-wrap {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+/* ===========================================================
+   ======================== COURSES ==========================
+   ===========================================================
+ */
+.course .content .row {
+    display: flex;
+    align-items: center;
+    margin-top: 19px;
+}
+
+.course .content .desc {
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    line-height: 1.78; /* 177.778% */
+    max-width: 525px;
+}
+
+.course .content a {
+    margin-left: auto;
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.list-course {
+    margin-top: 79px;
+    display: flex;
+    gap: 0 47px;
+}
+
+.list-course .item {
+    position: relative;
+    flex: 1;
+}
+
+.list-course .item:hover .thumb {
+    opacity: 0.8;
+}
+
+.list-course .item:hover .info {
+    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.1);
+}
+
+.list-course .item .thumb {
+    width: 100%;
+    height: 393px;
+    object-fit: cover;
+    border-radius: 8px;
+    opacity: 0.35;
+    background: #d0efed;
+}
+
+.list-course .info {
+    position: absolute;
+    bottom: -124px;
+    left: 17px;
+    right: 17px;
+    max-width: 325px;
+    padding: 18px 25px 29px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+}
+
+.list-course .info .title{
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.list-course .info .cost {
+    margin-top: 16px;
+    color: var(--secondary-color);
+    font-size: 1.6rem;
+    line-height: normal;
+}
+
+.list-course .info strong {
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.list-course .info .desc {
+    margin-top: 6px;
+}
+
+.list-course .info .desc,
+.list-course .info .value {
+    color: var(--thirdly-color);
+    font-size: 1.4rem;
+    line-height: normal;
+}
+
+.list-course .info .row {
+    margin-top: 18px;
+}
+
+.list-course .info .value {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.list-course .info .value::before {
+    display: inline-block;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    margin-right: 10px;
 }
