@@ -437,7 +437,7 @@ a {
     box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
 }
 
-.list-course .info .title{
+.list-course .info .title {
     color: #0d1111;
     font-size: 2.2rem;
     font-weight: 700;
@@ -487,4 +487,38 @@ a {
     border-radius: 50%;
     background: var(--primary-color);
     margin-right: 10px;
+}
+
+/* ===========================================================
+   ======================== STATS ==========================
+   ===========================================================
+ */
+.stats {
+    margin-top: 259px;
+}
+
+.stats .body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 862px;
+    margin: 0 auto;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat .value {
+    color: #0d1111;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.stat .desc {
+    margin-top: 11px;
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    line-height: normal;
 }
