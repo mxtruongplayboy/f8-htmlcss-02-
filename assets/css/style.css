@@ -10,18 +10,13 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    gap: 130px 0;
 }
 /* ===========================================================
    ========================= COMMON ==========================
@@ -334,6 +329,10 @@ a {
    ======================== FEATURE ==========================
    ===========================================================
  */
+.feature {
+    padding-top: 130px;
+}
+
 .feature .content {
     max-width: 591px;
 }
@@ -375,6 +374,10 @@ a {
    ======================== COURSES ==========================
    ===========================================================
  */
+.course {
+    padding-top: 130px;
+}
+
 .course .content .row {
     display: flex;
     align-items: center;
@@ -494,6 +497,7 @@ a {
    ===========================================================
  */
 .stats {
+    padding-top: 130px;
     margin-top: 259px;
 }
 
@@ -528,7 +532,8 @@ a {
    ===========================================================
  */
 .feedback {
-    margin-top: 134px;
+    padding-top: 175px;
+    margin-top: 89px;
 }
 
 .feedback .body {
@@ -670,7 +675,9 @@ a {
    ==================== CALL TO ACTION =======================
    ===========================================================
  */
+
 .cta-group {
+    margin-top: 130px;
     background: #def6f5;
     padding: 76px 0 88px 0;
 }
