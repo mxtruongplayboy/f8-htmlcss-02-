@@ -56,7 +56,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 186px;
+    min-width: 186px;
     height: 68px;
     border-radius: 14px;
     background: var(--primary-color);
@@ -664,4 +664,83 @@ a {
     top: 258px;
     right: 601px;
     background: #ffc147;
+}
+
+/* ===========================================================
+   ==================== CALL TO ACTION =======================
+   ===========================================================
+ */
+.cta-group {
+    background: #def6f5;
+    padding: 76px 0 88px 0;
+}
+
+.cta-group .body {
+    display: flex;
+    align-items: center;
+}
+
+.cta-group .desc {
+    margin-top: 18px;
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    line-height: normal;
+}
+
+.cta-group .cta-btn {
+    margin-left: auto;
+    margin-right: 154px;
+    background: #2ac9bf;
+    box-shadow: none;
+}
+
+/* ===========================================================
+   ========================= FOOTER ==========================
+   ===========================================================
+ */
+.footer {
+    padding: 130px 0 50px 0;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .column .title {
+    color: #2e2e2e;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 26px;
+}
+
+.footer .column:last-of-type .title {
+    margin-bottom: 18px;
+}
+
+.footer .column .list li {
+    margin-top: 19.5px;
+}
+
+.footer .column:last-of-type .list li {
+    margin-top: 18px;
+}
+
+.footer .column .list a {
+    color: #535353;
+    font-size: 1.6rem;
+    line-height: normal;
+}
+
+.footer .column:last-of-type .list li span {
+    margin-left: 9px;
+}
+
+.footer .copyright {
+    margin-top: 80px;
+    color: #b0b5b4;
+    font-size: 1.8rem;
+    line-height: normal;
+    text-align: center;
 }
